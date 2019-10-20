@@ -1,7 +1,11 @@
 package ShapeLibrary;
+
+import java.awt.*;
+import java.util.List;
+
 @SuppressWarnings("WeakerAccess")
 
-public class Circle {
+public class Circle extends Shape{
 
 
     /**
@@ -83,6 +87,33 @@ public class Circle {
          */
         public double computeArea() {
             return Math.PI * Math.pow(radius, 2);
+        }
+        public String toString() {
+            System.out.println("toString method");
+            return "Circle,"+String.valueOf(center.getX())+","+String.valueOf(center.getY())+","+String.valueOf(radius)+",";
+        }
+        public List<Shape> getShapes() {
+            return null;
+        }
+        public void render(int xOffset, int yOffset, Graphics graphics) throws ShapeException {
+
+            // Shift the shape by the specified rendering offset
+            move(-xOffset, -yOffset);
+
+            // Compute the left side of the bounding box
+            int x = (int) Math.round(center.getX() - getRadius());
+
+            // Compute the top side of the bounding box
+            int y = (int) Math.round(center.getY() - getRadius());
+
+            // Compute the width of the bounding box
+            int width = (int) Math.round(getRadius()*2);
+
+            // Draw the circle by drawing an oval in a square bounding box
+            graphics.drawOval(x, y, width, width);
+
+            // Shift the shape back to its original location
+            move(xOffset, yOffset);
         }
 
     }
