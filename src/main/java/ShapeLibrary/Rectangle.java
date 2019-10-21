@@ -4,33 +4,95 @@ import java.awt.*;
 import java.util.List;
 
 public class Rectangle extends Shape{
-    
+    private double length;
+    private double breadth;
+    private Line line1;
+    private Line line2;
+    private Line line3;
+    private Line line4;
     private Point point1;
     private Point point2;
     private Point point3;
     private Point point4;
+
+    /**
+     * Constructor based on x-y Locations of points of Rectangle
+     * @param x1                The x-location of first point -- must be a valid double.
+     * @param y1                The y-location of first point -- must be a valid double.
+     * @param x2                The x-location of second point -- must be a valid double.
+     * @param y2                The y-location of second point -- must be a valid double.
+     * @param x3                The y-location of second point -- must be a valid double.
+     * @param y3                The y-location of second point -- must be a valid double.
+     * @param x4                The y-location of second point -- must be a valid double.
+     * @param y4                The y-location of second point -- must be a valid double.
+     * @throws ShapeException   Exception throw if any parameter is invalid
+     */
 
     public Rectangle(double x1,double y1, double x2, double y2, double x3, double y3,double x4, double y4) throws ShapeException {
         point1=new Point(x1,y1);
         point2=new Point(x2,y2);
         point3=new Point(x3,y3);
         point4=new Point(x4,y4);
+        line1= new Line(point1,point2);
+        line2= new Line(point2,point3);
+        line3= new Line(point3,point4);
+        line4= new Line(point4,point1);
+        this.length=line1.computeLength();
+        this.breadth= line2.computeLength();
+        /**
+         *  condition to check if the lines are
+          *  perpendicular or not!!
+         */
+        if((line1.computeSlope()*line2.computeSlope())!=-1 || (line2.computeSlope()*line3.computeSlope())!=-1 || (line3.computeSlope()*line4.computeSlope())!=-1 || (line4.computeSlope()*line1.computeSlope())!= -1)
+            throw new ShapeException("Adjacent line are not perpendicular");
     }
 
-    public Rectangle(Point point1,Point point2,Point point3,Point point4) throws ShapeException {
-        if (point1==null || point2==null || point3==null || point4==null)
+    /**
+     * Constructs a rectangle with given 4 lines of rectangle
+     * @param line1                 First line of rectangle -- must contain a valid Line reference
+     * @param line2                 Second line of rectangle -- must contain a valid Line reference
+     * @param line3                 Third line of rectangle -- must contain a valid Line reference
+     * @param line4                 Fourth line of rectangle -- must contain a valid Line reference
+     */
+
+    public Rectangle(Line line1,Line line2,Line line3,Line line4) throws ShapeException {
+        if (line1==null || line2==null || line3==null || line4==null)
             throw new ShapeException("Invalid Point");
 
-        this.point1=point1.copy();
-        this.point2=point2.copy();
-        this.point3=point3.copy();
-        this.point4=point4.copy();
+        this.line1=line1;
+        this.line2=line2;
+        this.line3=line3;
+        this.line4=line4;
+        /**
+         *  condition to check if the lines are
+           * perpendicular or not!!
+         */
+        if((line1.computeSlope()*line2.computeSlope())!=-1 || (line2.computeSlope()*line3.computeSlope())!=-1 || (line3.computeSlope()*line4.computeSlope())!=-1 || (line4.computeSlope()*line1.computeSlope())!= -1)
+            throw new ShapeException("Adjacent line are not perpendicular");
+    }
+    /**
+     * Constructs a rectangle with given length and width of rectangle
+     * @param length               length of rectangle -- must be a valid double
+     * @param breadth                Width of rectangle -- must be a valid double
+     */
+
+    public Rectangle(double length, double breadth) throws ShapeException {
+        if(length<=0 || breadth<=0)
+            throw new ShapeException("Invalid side");
+        this.length=length;
+        this.breadth= breadth;
     }
 
-    public Point getPoint1() throws ShapeException { return point1.copy(); }
-    public Point getPoint2() throws ShapeException { return point2.copy(); }
-    public Point getPoint3() throws ShapeException { return point3.copy(); }
-    public Point getPoint4() throws ShapeException { return point4.copy(); }
+    public Point getPoint1() throws ShapeException { return point1; }
+    public Point getPoint2() throws ShapeException { return point2; }
+    public Point getPoint3() throws ShapeException { return point3; }
+    public Point getPoint4() throws ShapeException { return point4; }
+    public double getLength() {return length;}
+    public double getBreadth() {return breadth;}
+    public Line getLine1() {return line1;}
+    public Line getLine2(){return line2;}
+    public Line getLine3() {return line3;}
+    public Line getLine4() {return line4;}
 
     public void move(double deltaX, double deltaY) throws ShapeException {
         point1.move(deltaX, deltaY);
@@ -39,55 +101,20 @@ public class Rectangle extends Shape{
         point4.move(deltaX,deltaY);
     }
 
-    public double computeLength1() {
-        return Math.sqrt(Math.pow(point2.getX() - point1.getX(), 2) +
-                Math.pow(point2.getY() - point1.getY(), 2));
-    }
-
-    public double computeLength2() {
-        return Math.sqrt(Math.pow(point2.getX() - point3.getX(), 2) +
-                Math.pow(point2.getY() - point3.getY(), 2));
-    }
-
-    public double computeLength3() {
-        return Math.sqrt(Math.pow(point4.getX() - point3.getX(), 2) +
-                Math.pow(point4.getY() - point3.getY(), 2));
-    }
-
-    public double computeLength4() {
-        return Math.sqrt(Math.pow(point4.getX() - point1.getX(), 2) +
-                Math.pow(point4.getY() - point1.getY(), 2));
-    }
-
-    public double getLength(){return  computeLength1();}
-    public double getWidth(){return computeLength3();}
-
-    public double computeSlope1() {
-        return (point2.getY() - point1.getY())/(point2.getX() - point1.getX());
-    }
-    public double computeSlope2() {
-        return (point3.getY() - point2.getY())/(point3.getX() - point2.getX());
-    }
-    public double computeSlope3() {
-        return (point3.getY() - point4.getY())/(point3.getX() - point4.getX());
-    }
-    public double computeSlope4() {
-        return (point4.getY() - point1.getY())/(point4.getX() - point1.getX());
-    }
+    /**
+     * This function calculates the area of the rectangle
+     */
 
     public double computeArea() throws ShapeException {
-        if(!(((computeSlope1()*computeSlope2())==-1) || ((computeSlope2()*computeSlope3())==-1) ||
-                ((computeSlope3()*computeSlope4())==-1) || ((computeSlope1()*computeSlope4())==-1))){
-            throw new ShapeException("Rectangle cannot be created");
-        }
-        double area= computeLength1()*computeLength3();
+
+        double area= length*breadth;
         return area;
     }
     public String toString() {
         return "Rectangle,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+","+String.valueOf(point3.getX())+","+String.valueOf(point3.getY())+","+String.valueOf(point4.getX())+","+String.valueOf(point4.getY())+",";
     }
 
-    //Use of this not understood:Shubham
+
     public List<Shape> getShapes() {
         return null;
     }
@@ -100,7 +127,7 @@ public class Rectangle extends Shape{
         int x = (int) Math.round(point1.getX() - getLength());
 
         // Compute the top side of the bounding box
-        int y = (int) Math.round(point1.getY() - getWidth());
+        int y = (int) Math.round(point1.getY() - getBreadth());
 
         // Compute the width of the bounding box
         //int width = (int) getWidth();

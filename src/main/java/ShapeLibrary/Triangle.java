@@ -14,6 +14,16 @@ public class Triangle extends Shape{
     private double side1;
     private double side2;
     private double side3;
+    /**
+     * Constructor based on x-y Locations of points of Triangle
+     * @param x1                The x-location of first point -- must be a valid double.
+     * @param y1                The y-location of first point -- must be a valid double.
+     * @param x2                The x-location of second point -- must be a valid double.
+     * @param y2                The y-location of second point -- must be a valid double.
+     * @param x3                The y-location of second point -- must be a valid double.
+     * @param y3                The y-location of second point -- must be a valid double.
+     * @throws ShapeException   Exception throw if any parameter is invalid
+     */
 
     public Triangle(double x1,double y1, double x2, double y2, double x3, double y3) throws ShapeException {
         point1=new Point(x1,y1);
@@ -25,7 +35,16 @@ public class Triangle extends Shape{
         side1= line1.computeLength();
         side2=line2.computeLength();
         side3=line3.computeLength();
+        if((line1.computeSlope()==line2.computeSlope()) || (line2.computeSlope()==line3.computeSlope()) || (line3.computeSlope()==line1.computeSlope()))
+            throw new ShapeException("Points must not be collinear");
     }
+
+    /**
+     * Constructs a triangle with given 3 lines of triangle
+     * @param line1                 First line of triangle -- must contain a valid Line reference
+     * @param line2                 Second line of triangle -- must contain a valid Line reference
+     * @param line3                 Third line of triangle -- must contain a valid Line reference
+     */
 
     public Triangle(Line line1,Line line2,Line line3) throws ShapeException {
         if (line1==null || line2==null || line3==null)
@@ -34,11 +53,33 @@ public class Triangle extends Shape{
         this.line1=line1;
         this.line2=line1;
         this.line3=line3;
+        if((line1.computeSlope()==line2.computeSlope()) || (line2.computeSlope()==line3.computeSlope()) || (line3.computeSlope()==line1.computeSlope()))
+            throw new ShapeException("Points must not be collinear");
+    }
+
+    /**
+     * Constructs a triangle with given sides triangle
+     * @param side1               side of triangle -- must be a valid double
+     * @param side2                side of triangle -- must be a valid double
+     * @param side3                side of triangle -- must be a valid double
+     */
+    public Triangle(double side1,double side2, double side3) throws ShapeException {
+        Validator.validatePositiveDouble(side1, "Invalid radius");
+        Validator.validatePositiveDouble(side2, "Invalid radius");
+        Validator.validatePositiveDouble(side3, "Invalid radius");
+        this.side1=side1;
+        this.side2=side2;
+        this.side3=side3;
+        if((side1+side2)<side3 || (side2+side3)<side1 || (side1+side3)<side2)
+            throw new ShapeException("Does not follow side sum rule");
     }
 
     public Point getPoint1() throws ShapeException { return point1.copy(); }
     public Point getPoint2() throws ShapeException { return point2.copy(); }
     public Point getPoint3() throws ShapeException { return point3.copy(); }
+    public Line getLine1() {return line1;}
+    public Line getLine2() {return line2;}
+    public Line getLine3() {return line3;}
 
     public void move(double deltaX, double deltaY) throws ShapeException {
         point1.move(deltaX, deltaY);
@@ -46,39 +87,14 @@ public class Triangle extends Shape{
         point3.move(deltaX,deltaY);
     }
 
-    public double computeLength1() {
-        return Math.sqrt(Math.pow(point2.getX() - point1.getX(), 2) +
-                Math.pow(point2.getY() - point1.getY(), 2));
-    }
+    //This function computes the perimeter of triangle
+    public double getPerimeter(){return side1+side2+side3;}
 
-    public double computeLength2() {
-        return Math.sqrt(Math.pow(point3.getX() - point1.getX(), 2) +
-                Math.pow(point3.getY() - point1.getY(), 2));
-    }
+    //This function computes the area of Triangle
+    public double computeArea() {
 
-    public double computeLength3() {
-        return Math.sqrt(Math.pow(point2.getX() - point3.getX(), 2) +
-                Math.pow(point2.getY() - point3.getY(), 2));
-    }
-
-    public double computeSlope1() {
-        return (point2.getY() - point1.getY())/(point2.getX() - point1.getX());
-    }
-    public double computeSlope2() {
-        return (point3.getY() - point1.getY())/(point3.getX() - point1.getX());
-    }
-    public double computeSlope3() {
-        return (point3.getY() - point2.getY())/(point3.getX() - point2.getX());
-    }
-
-    public double computeArea() throws ShapeException {
-        if(!(computeSlope1()==(computeSlope2()) && (computeSlope2()==computeSlope3()) && (computeSlope1()==computeSlope3()))){
-            throw new ShapeException("Triangle cannot be created");
-        }
-        double area;
-        double s= (computeLength1()+computeLength2()+computeLength3())/3;
-        area= Math.sqrt(s*(Math.pow((s-computeLength1()),2))*(Math.pow((s-computeLength2()),2))*(Math.pow((s-computeLength3()),2)));
-        return area;
+        double s= getPerimeter()/2;
+        return Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
     }
     public String toString() {
         return "Triangle,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+","+String.valueOf(point3.getX())+","+String.valueOf(point3.getY())+",";

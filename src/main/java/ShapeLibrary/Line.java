@@ -86,34 +86,34 @@ public class Line extends Shape{
         public double computeArea(){
             return 0;
         }
-    public String toString() {
-        return "Line,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+",";
-    }
-    public List<Shape> getShapes() {
-        return null;
-    }
-    public void render(int xOffset, int yOffset, Graphics graphics) throws ShapeException {
+        public String toString() {
+            return "Line,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+",";
+        }
+        public List<Shape> getShapes() {
+            return null;
+        }
+        public void render(int xOffset, int yOffset, Graphics graphics) throws ShapeException {
 
-        // Shift the shape by the specified rendering offset
-        move(-xOffset, -yOffset);
+            // Shift the shape by the specified rendering offset
+            move(-xOffset, -yOffset);
 
-        // Compute the left side of the bounding box
-        int x1 = (int) Math.round(point1.getX());
-        int x2 = (int) Math.round(point2.getX());
+            // Compute the left side of the bounding box
+            int x1 = (int) Math.round(point1.getX());
+            int x2 = (int) Math.round(point2.getX());
 
-        // Compute the top side of the bounding box
-        int y1 = (int) Math.round(point1.getY());
-        int y2 = (int) Math.round(point2.getY());
-
-
+            // Compute the top side of the bounding box
+            int y1 = (int) Math.round(point1.getY());
+            int y2 = (int) Math.round(point2.getY());
 
 
-        // Draw the circle by drawing an oval in a square bounding box
-        graphics.drawLine(x1,y1,x2,y2);
 
-        // Shift the shape back to its original location
-        move(xOffset, yOffset);
-    }
+
+            // Draw the circle by drawing an oval in a square bounding box
+            graphics.drawLine(x1,y1,x2,y2);
+
+            // Shift the shape back to its original location
+            move(xOffset, yOffset);
+        }
     }
 
 
