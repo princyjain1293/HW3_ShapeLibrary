@@ -52,7 +52,5 @@ public class EmbeddedPicture extends Shape {
         // Shift the shape back to its original location
         move(xOffset, yOffset);
     }
-    public String toString() {
-        return "EmbeddedPicture,"+centre_Image.getX()+","+centre_Image.getY()+","+String.valueOf(length)+","+String.valueOf(breadth)+","+path+",";
-    }
+
 }

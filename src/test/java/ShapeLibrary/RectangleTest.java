@@ -16,44 +16,52 @@ public class RectangleTest {
         Point point2 = new Point(0,3);
 
         Line line1 = new Line(point1, point2);
-        assertSame(point1, line1.getPoint1());
-        assertSame(point2, line1.getPoint2());
-
-        Point point3 = new Point(4,3);
-
-        Line line2 = new Line(point2, point3);
-        assertSame(point2, line2.getPoint1());
-        assertSame(point3, line2.getPoint2());
-
-        Point point4 = new Point(4,0);
-
-        Line line3 = new Line(point3, point4);
-        assertSame(point3, line3.getPoint1());
-        assertSame(point4, line3.getPoint2());
-
-        Line line4 = new Line(point4, point1);
-        assertSame(point4, line4.getPoint1());
-        assertSame(point1, line4.getPoint2());
-
-        Rectangle myRectangle = new Rectangle(line1,line2,line3,line4);
-
-        myRectangle = new Rectangle(0,0,0,3,4,3,4,0);
         assertEquals(0, line1.getPoint1().getX(), 0);
         assertEquals(0, line1.getPoint1().getY(), 0);
         assertEquals(0, line1.getPoint2().getX(), 0);
         assertEquals(3, line1.getPoint2().getY(), 0);
+
+        Point point3 = new Point(4,3);
+
+        Line line2 = new Line(point2, point3);
         assertEquals(0, line2.getPoint1().getX(), 0);
         assertEquals(3, line2.getPoint1().getY(), 0);
         assertEquals(4, line2.getPoint2().getX(), 0);
         assertEquals(3, line2.getPoint2().getY(), 0);
+
+        Point point4 = new Point(4,0);
+
+        Line line3 = new Line(point3, point4);
         assertEquals(4, line3.getPoint1().getX(), 0);
         assertEquals(3, line3.getPoint1().getY(), 0);
         assertEquals(4, line3.getPoint2().getX(), 0);
         assertEquals(0, line3.getPoint2().getY(), 0);
+
+        Line line4 = new Line(point4, point1);
         assertEquals(4, line4.getPoint1().getX(), 0);
         assertEquals(0, line4.getPoint1().getY(), 0);
         assertEquals(0, line4.getPoint2().getX(), 0);
         assertEquals(0, line4.getPoint2().getY(), 0);
+
+        Rectangle myRectangle = new Rectangle(line1,line2,line3,line4);
+
+        myRectangle = new Rectangle(0,0,0,3,4,3,4,0);
+        assertEquals(0, myRectangle.getPoint1().getX(), 0);
+        assertEquals(0, myRectangle.getPoint1().getY(), 0);
+        assertEquals(3, myRectangle.getPoint2().getY(), 0);
+        assertEquals(0, myRectangle.getPoint2().getX(), 0);
+        assertEquals(0, myRectangle.getPoint1().getX(), 0);
+        assertEquals(3, myRectangle.getPoint1().getY(), 0);
+        assertEquals(4, myRectangle.getPoint2().getX(), 0);
+        assertEquals(3, myRectangle.getPoint2().getY(), 0);
+        assertEquals(4, myRectangle.getPoint1().getX(), 0);
+        assertEquals(3, myRectangle.getPoint1().getY(), 0);
+        assertEquals(4, myRectangle.getPoint2().getX(), 0);
+        assertEquals(0, myRectangle.getPoint2().getY(), 0);
+        assertEquals(4, myRectangle.getPoint1().getX(), 0);
+        assertEquals(0, myRectangle.getPoint1().getY(), 0);
+        assertEquals(0, myRectangle.getPoint2().getX(), 0);
+        assertEquals(0, myRectangle.getPoint2().getY(), 0);
     }
 
     @Test
@@ -186,7 +194,7 @@ public class RectangleTest {
     @Test
     public void testGetLength() throws ShapeException {
         Rectangle myRectangle = new Rectangle(10, 20);
-        assertEquals(20, myRectangle.getLength(), 0);
+        assertEquals(10, myRectangle.getLength(), 0);
     }
 
     @Test
@@ -215,22 +223,22 @@ public class RectangleTest {
     public void testMove() throws ShapeException {
         Rectangle myRectangle = new Rectangle(0, 0, 0, 3, 4, 3, 4, 0);
         myRectangle.move(3, 4);
-        assertEquals(3, myRectangle.getLine1().getPoint1().getX(), 0);
-        assertEquals(4, myRectangle.getLine1().getPoint1().getY(), 0);
-        assertEquals(3, myRectangle.getLine1().getPoint2().getX(), 0);
-        assertEquals(7, myRectangle.getLine1().getPoint2().getY(), 0);
-        assertEquals(3, myRectangle.getLine2().getPoint1().getX(), 0);
-        assertEquals(7, myRectangle.getLine2().getPoint1().getY(), 0);
-        assertEquals(7, myRectangle.getLine2().getPoint2().getX(), 0);
-        assertEquals(7, myRectangle.getLine2().getPoint2().getY(), 0);
-        assertEquals(7, myRectangle.getLine3().getPoint1().getX(), 0);
-        assertEquals(7, myRectangle.getLine3().getPoint1().getY(), 0);
-        assertEquals(7, myRectangle.getLine3().getPoint2().getX(), 0);
-        assertEquals(4, myRectangle.getLine3().getPoint2().getY(), 0);
-        assertEquals(7, myRectangle.getLine4().getPoint1().getX(), 0);
-        assertEquals(4, myRectangle.getLine4().getPoint1().getY(), 0);
-        assertEquals(3, myRectangle.getLine4().getPoint2().getX(), 0);
-        assertEquals(4, myRectangle.getLine4().getPoint2().getY(), 0);
+        assertEquals(3, myRectangle.getPoint1().getX(), 0);
+        assertEquals(4, myRectangle.getPoint1().getY(), 0);
+        assertEquals(3, myRectangle.getPoint2().getX(), 0);
+        assertEquals(7, myRectangle.getPoint2().getY(), 0);
+        assertEquals(7, myRectangle.getPoint3().getX(), 0);
+        assertEquals(7, myRectangle.getPoint3().getY(), 0);
+        assertEquals(7, myRectangle.getPoint4().getX(), 0);
+        assertEquals(4, myRectangle.getPoint4().getY(), 0);
+//        assertEquals(7, myRectangle.getPoint1().getX(), 0);
+//        assertEquals(7, myRectangle.getPoint1().getY(), 0);
+//        assertEquals(7, myRectangle.getPoint2().getX(), 0);
+//        assertEquals(4, myRectangle.getPoint2().getY(), 0);
+//        assertEquals(7, myRectangle.getPoint1().getX(), 0);
+//        assertEquals(4, myRectangle.getPoint1().getY(), 0);
+//        assertEquals(3, myRectangle.getPoint2().getX(), 0);
+//        assertEquals(4, myRectangle.getPoint2().getY(), 0);
     }
 
     @Test

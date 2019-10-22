@@ -15,7 +15,8 @@ public class CircleTest {
     public void testValidConstruction() throws ShapeException {
         Point center = new Point(1,2);
         Circle myCircle = new Circle(center, 5);
-        assertSame(center, myCircle.getCenter());
+        assertEquals(1, myCircle.getCenter().getX(), 0);
+        assertEquals(2, myCircle.getCenter().getY(), 0);
         assertEquals(5, myCircle.getRadius(), 0);
 
         myCircle = new Circle(1.3, 2.6, 2.5);

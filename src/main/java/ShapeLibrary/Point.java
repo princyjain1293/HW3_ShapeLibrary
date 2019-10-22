@@ -93,9 +93,9 @@ public class Point extends Shape{
         public double computeArea(){
             return 0;
         }
-        public String toString() {
-            return "Point,"+(x)+","+(y)+",";
-        }
+//        public String toString() {
+//            return "Point,"+(x)+","+(y)+",";
+//        }
         public List<Shape> getShapes() {
             return null;
         }

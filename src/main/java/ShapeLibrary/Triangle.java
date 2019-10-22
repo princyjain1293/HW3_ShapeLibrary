@@ -64,9 +64,9 @@ public class Triangle extends Shape{
      * @param side3                side of triangle -- must be a valid double
      */
     public Triangle(double side1,double side2, double side3) throws ShapeException {
-        Validator.validatePositiveDouble(side1, "Invalid radius");
-        Validator.validatePositiveDouble(side2, "Invalid radius");
-        Validator.validatePositiveDouble(side3, "Invalid radius");
+        Validator.validatePositiveDouble(side1, "Invalid side");
+        Validator.validatePositiveDouble(side2, "Invalid side");
+        Validator.validatePositiveDouble(side3, "Invalid side");
         this.side1=side1;
         this.side2=side2;
         this.side3=side3;
@@ -77,9 +77,7 @@ public class Triangle extends Shape{
     public Point getPoint1() throws ShapeException { return point1.copy(); }
     public Point getPoint2() throws ShapeException { return point2.copy(); }
     public Point getPoint3() throws ShapeException { return point3.copy(); }
-    public Line getLine1() {return line1;}
-    public Line getLine2() {return line2;}
-    public Line getLine3() {return line3;}
+
 
     public void move(double deltaX, double deltaY) throws ShapeException {
         point1.move(deltaX, deltaY);
@@ -96,9 +94,7 @@ public class Triangle extends Shape{
         double s= getPerimeter()/2;
         return Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
     }
-    public String toString() {
-        return "Triangle,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+","+String.valueOf(point3.getX())+","+String.valueOf(point3.getY())+",";
-    }
+
     public List<Shape> getShapes() {
         return null;
     }

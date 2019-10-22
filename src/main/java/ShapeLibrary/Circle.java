@@ -88,10 +88,10 @@ public class Circle extends Shape{
         public double computeArea() {
             return Math.PI * Math.pow(radius, 2);
         }
-        public String toString() {
-            System.out.println("toString method");
-            return "Circle,"+String.valueOf(center.getX())+","+String.valueOf(center.getY())+","+String.valueOf(radius)+",";
-        }
+//        public String toString() {
+//            System.out.println("toString method");
+//            return "Circle,"+String.valueOf(center.getX())+","+String.valueOf(center.getY())+","+String.valueOf(radius)+",";
+//        }
         public List<Shape> getShapes() {
             return null;
         }

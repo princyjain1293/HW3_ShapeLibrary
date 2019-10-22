@@ -86,9 +86,9 @@ public class Line extends Shape{
         public double computeArea(){
             return 0;
         }
-        public String toString() {
-            return "Line,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+",";
-        }
+//        public String toString() {
+//            return "Line,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+",";
+//        }
         public List<Shape> getShapes() {
             return null;
         }

@@ -43,8 +43,8 @@ public class Rectangle extends Shape{
          *  condition to check if the lines are
           *  perpendicular or not!!
          */
-        if((line1.computeSlope()*line2.computeSlope())!=-1 || (line2.computeSlope()*line3.computeSlope())!=-1 || (line3.computeSlope()*line4.computeSlope())!=-1 || (line4.computeSlope()*line1.computeSlope())!= -1)
-            throw new ShapeException("Adjacent line are not perpendicular");
+//        if((line1.computeSlope()*line2.computeSlope())!=-1 || (line2.computeSlope()*line3.computeSlope())!=-1 || (line3.computeSlope()*line4.computeSlope())!=-1 || (line4.computeSlope()*line1.computeSlope())!= -1)
+//            throw new ShapeException("Adjacent line are not perpendicular");
     }
 
     /**
@@ -83,16 +83,13 @@ public class Rectangle extends Shape{
         this.breadth= breadth;
     }
 
-    public Point getPoint1() throws ShapeException { return point1; }
-    public Point getPoint2() throws ShapeException { return point2; }
-    public Point getPoint3() throws ShapeException { return point3; }
-    public Point getPoint4() throws ShapeException { return point4; }
+    public Point getPoint1(){ return point1; }
+    public Point getPoint2(){ return point2; }
+    public Point getPoint3(){ return point3; }
+    public Point getPoint4(){ return point4; }
     public double getLength() {return length;}
     public double getBreadth() {return breadth;}
-    public Line getLine1() {return line1;}
-    public Line getLine2(){return line2;}
-    public Line getLine3() {return line3;}
-    public Line getLine4() {return line4;}
+
 
     public void move(double deltaX, double deltaY) throws ShapeException {
         point1.move(deltaX, deltaY);
@@ -110,9 +107,9 @@ public class Rectangle extends Shape{
         double area= length*breadth;
         return area;
     }
-    public String toString() {
-        return "Rectangle,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+","+String.valueOf(point3.getX())+","+String.valueOf(point3.getY())+","+String.valueOf(point4.getX())+","+String.valueOf(point4.getY())+",";
-    }
+//    public String toString() {
+//        return "Rectangle,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+","+String.valueOf(point3.getX())+","+String.valueOf(point3.getY())+","+String.valueOf(point4.getX())+","+String.valueOf(point4.getY())+",";
+//    }
 
 
     public List<Shape> getShapes() {

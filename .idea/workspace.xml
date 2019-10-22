@@ -2,15 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="496f6578-1716-496f-85bf-d8bb21c0c0bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/LineTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/PointTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ShapeLibrary/CompositeImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/CompositeImageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/EmbeddedPictureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/ShapeExceptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/TriangleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/ValidatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/EmbeddedPicture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/EmbeddedPicture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/Line.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/Point.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/Rectangle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/ShapeLibrary/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ShapeLibrary/CircleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/ShapeLibrary/LineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ShapeLibrary/LineTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/ShapeLibrary/RectangleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ShapeLibrary/RectangleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ShapeLibrary/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShapeLibrary/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ShapeLibrary/EmbeddedPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShapeLibrary/EmbeddedPicture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ShapeLibrary/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShapeLibrary/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ShapeLibrary/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShapeLibrary/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ShapeLibrary/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShapeLibrary/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ShapeLibrary/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShapeLibrary/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flyWeight/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flyWeight/ShapeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ShapeLibrary/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/CircleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ShapeLibrary/LineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/LineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -22,7 +39,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$CircleTest.ic" NAME="CircleTest Coverage Results" MODIFIED="1571608093381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$LineTest_testValidConstructor.ic" NAME="LineTest.testValidConstructor Coverage Results" MODIFIED="1571627598112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$LineTest.ic" NAME="LineTest Coverage Results" MODIFIED="1571609125494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -31,13 +48,43 @@
     <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$RectangleTest_testValidConstructor.ic" NAME="RectangleTest.testValidConstructor Coverage Results" MODIFIED="1571617150386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$ShapeExceptionTest.ic" NAME="ShapeExceptionTest Coverage Results" MODIFIED="1571628788911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$CompositeImageTest_testComputeArea.ic" NAME="CompositeImageTest.testComputeArea Coverage Results" MODIFIED="1571684842506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$ShapeLibrary_in_HW2_ShapeLibrary_test.ic" NAME="ShapeLibrary in HW2_ShapeLibrary.test Coverage Results" MODIFIED="1571705034027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$TriangleTest.ic" NAME="TriangleTest Coverage Results" MODIFIED="1571633619932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$PointTest.ic" NAME="PointTest Coverage Results" MODIFIED="1571607674486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$RectangleTest_testMove.ic" NAME="RectangleTest.testMove Coverage Results" MODIFIED="1571610826026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$ValidatorTest.ic" NAME="ValidatorTest Coverage Results" MODIFIED="1571631594994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$RectangleTest.ic" NAME="RectangleTest Coverage Results" MODIFIED="1571617276915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$RectangleTest_testMove.ic" NAME="RectangleTest.testMove Coverage Results" MODIFIED="1571630499157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$EmbeddedPictureTest.ic" NAME="EmbeddedPictureTest Coverage Results" MODIFIED="1571635808462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$CircleTest.ic" NAME="CircleTest Coverage Results" MODIFIED="1571608093381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$CompositeImageTest_testGetShapes.ic" NAME="CompositeImageTest.testGetShapes Coverage Results" MODIFIED="1571685532787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$CompositeImageTest.ic" NAME="CompositeImageTest Coverage Results" MODIFIED="1571704316557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$TriangleTest_testInvalidConstructor.ic" NAME="TriangleTest.testInvalidConstructor Coverage Results" MODIFIED="1571633442160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$RectangleTest.ic" NAME="RectangleTest Coverage Results" MODIFIED="1571631217114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
   </component>
@@ -55,56 +102,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Circle.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/CompositeImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="71" />
+            <state relative-caret-position="-357">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#178#179#0" expanded="true" />
+                <element signature="e#217#218#0" expanded="true" />
+                <element signature="e#260#261#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#4219#4220#0" expanded="true" />
+                <element signature="e#4252#4253#0" expanded="true" />
+                <element signature="e#4375#4376#0" expanded="true" />
+                <element signature="e#4405#4406#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/CircleTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/CompositeImageTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Point.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/ShapeException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Rectangle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="80" column="53" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5212#5213#0" expanded="true" />
-              </folding>
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -113,52 +133,19 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Triangle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Shape.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Line.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="97" column="37" lean-forward="true" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="156" selection-start-line="156" selection-end-line="156" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/LineTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/flyWeight/ShapeFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="260">
+              <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,7 +166,14 @@
       <find>area</find>
       <find>shape</find>
       <find>getshape</find>
+      <find>tost</find>
       <find>move</find>
+      <find>getpo</find>
+      <find>invalid r</find>
+      <find>getsha</find>
+      <find>ren</find>
+      <find>tostr</find>
+      <find>remov</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,18 +185,24 @@
         <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Validator.java" />
         <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/ShapeException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Shape.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/EmbeddedPicture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Point.java" />
         <option value="$PROJECT_DIR$/src/main/java/flyWeight/FlyweightFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Circle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/flyWeight/ShapeFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Triangle.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/PointTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Line.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Point.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Circle.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/CircleTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/LineTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Line.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/ShapeExceptionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/ValidatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/TriangleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Triangle.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/EmbeddedPictureTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/EmbeddedPicture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/CompositeImage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/CompositeImageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/flyWeight/ShapeFactory.java" />
       </list>
     </option>
   </component>
@@ -217,6 +217,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,41 +256,16 @@
               <item name="HW2_ShapeLibrary" type="b2602c69:ProjectViewProjectNode" />
               <item name="HW2_ShapeLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ShapeLibrary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW2_ShapeLibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW2_ShapeLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW2_ShapeLibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW2_ShapeLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW2_ShapeLibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW2_ShapeLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ShapeLibrary" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571617398149" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571706085746" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
   </component>
@@ -312,8 +289,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RectangleTest">
-    <configuration name="CircleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ShapeLibrary in HW2_ShapeLibrary.test">
+    <configuration name="CompositeImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW2_ShapeLibrary.test" />
       <extension name="coverage">
         <pattern>
@@ -322,13 +299,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ShapeLibrary" />
-      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.CircleTest" />
+      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.CompositeImageTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompositeImageTest.testComputeArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW2_ShapeLibrary.test" />
       <extension name="coverage">
         <pattern>
@@ -337,44 +314,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ShapeLibrary" />
-      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.LineTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HW2_ShapeLibrary.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ShapeLibrary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ShapeLibrary" />
-      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.RectangleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RectangleTest.testMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HW2_ShapeLibrary.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ShapeLibrary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ShapeLibrary" />
-      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.RectangleTest" />
-      <option name="METHOD_NAME" value="testMove" />
+      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.CompositeImageTest" />
+      <option name="METHOD_NAME" value="testComputeArea" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleTest.testValidConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompositeImageTest.testGetShapes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW2_ShapeLibrary.test" />
       <extension name="coverage">
         <pattern>
@@ -383,20 +330,49 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ShapeLibrary" />
-      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.RectangleTest" />
-      <option name="METHOD_NAME" value="testValidConstructor" />
+      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.CompositeImageTest" />
+      <option name="METHOD_NAME" value="testGetShapes" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmbeddedPictureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW2_ShapeLibrary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ShapeLibrary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ShapeLibrary" />
+      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.EmbeddedPictureTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShapeLibrary in HW2_ShapeLibrary.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW2_ShapeLibrary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ShapeLibrary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ShapeLibrary" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RectangleTest" />
-        <item itemvalue="JUnit.RectangleTest.testValidConstructor" />
-        <item itemvalue="JUnit.RectangleTest.testMove" />
-        <item itemvalue="JUnit.LineTest" />
-        <item itemvalue="JUnit.CircleTest" />
+        <item itemvalue="JUnit.ShapeLibrary in HW2_ShapeLibrary.test" />
+        <item itemvalue="JUnit.CompositeImageTest" />
+        <item itemvalue="JUnit.CompositeImageTest.testGetShapes" />
+        <item itemvalue="JUnit.CompositeImageTest.testComputeArea" />
+        <item itemvalue="JUnit.EmbeddedPictureTest" />
       </list>
     </recent_temporary>
   </component>
@@ -414,35 +390,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CircleTest - 2019.10.20 at 15h 45m 43s.xml">
-      <configuration name="CircleTest" configurationId="JUnit" />
+    <history-entry file="CompositeImageTest - 2019.10.21 at 13h 44m 11s.xml">
+      <configuration name="CompositeImageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircleTest - 2019.10.20 at 15h 48m 57s.xml">
-      <configuration name="CircleTest" configurationId="JUnit" />
+    <history-entry file="CompositeImageTest - 2019.10.21 at 13h 44m 54s.xml">
+      <configuration name="CompositeImageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LineTest - 2019.10.20 at 16h 06m 12s.xml">
-      <configuration name="LineTest" configurationId="JUnit" />
+    <history-entry file="ShapeLibrary_in_HW2_ShapeLibrary_test - 2019.10.21 at 13h 45m 55s.xml">
+      <configuration name="ShapeLibrary in HW2_ShapeLibrary.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RectangleTest - 2019.10.20 at 16h 23m 16s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
+    <history-entry file="CompositeImageTest - 2019.10.21 at 13h 48m 31s.xml">
+      <configuration name="CompositeImageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RectangleTest - 2019.10.20 at 16h 26m 50s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
+    <history-entry file="CompositeImageTest - 2019.10.21 at 17h 59m 14s.xml">
+      <configuration name="CompositeImageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RectangleTest_testMove - 2019.10.20 at 16h 34m 26s.xml">
-      <configuration name="RectangleTest.testMove" configurationId="JUnit" />
+    <history-entry file="CompositeImageTest - 2019.10.21 at 18h 18m 22s.xml">
+      <configuration name="CompositeImageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RectangleTest - 2019.10.20 at 18h 01m 41s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
+    <history-entry file="ShapeLibrary_in_HW2_ShapeLibrary_test - 2019.10.21 at 18h 20m 45s.xml">
+      <configuration name="ShapeLibrary in HW2_ShapeLibrary.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RectangleTest - 2019.10.20 at 18h 08m 22s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
+    <history-entry file="ShapeLibrary_in_HW2_ShapeLibrary_test - 2019.10.21 at 18h 31m 35s.xml">
+      <configuration name="ShapeLibrary in HW2_ShapeLibrary.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RectangleTest_testValidConstructor - 2019.10.20 at 18h 20m 03s.xml">
-      <configuration name="RectangleTest.testValidConstructor" configurationId="JUnit" />
+    <history-entry file="CompositeImageTest - 2019.10.21 at 18h 32m 49s.xml">
+      <configuration name="CompositeImageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RectangleTest - 2019.10.20 at 18h 22m 04s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
+    <history-entry file="ShapeLibrary_in_HW2_ShapeLibrary_test - 2019.10.21 at 18h 44m 39s.xml">
+      <configuration name="ShapeLibrary in HW2_ShapeLibrary.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -456,8 +432,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.12556732" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.12708019" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.12556732" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -467,7 +444,7 @@
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -476,7 +453,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Build" order="11" visible="true" weight="0.3289689" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.31240544" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.31240544" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -500,53 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/EmbeddedPicture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flyWeight/ShapeFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="71" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Shape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/PointTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1">
@@ -554,44 +484,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/ShapeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/CircleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Line.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="97" column="37" lean-forward="true" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        <state relative-caret-position="177">
+          <caret line="97" column="11" lean-forward="true" selection-start-line="95" selection-start-column="10" selection-end-line="97" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -600,26 +496,174 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="80" column="53" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
+        <state relative-caret-position="112">
+          <caret line="68" column="11" lean-forward="true" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5185#5186#0" expanded="true" />
             <element signature="e#5212#5213#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/ValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/LineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="55" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="133" column="40" lean-forward="true" selection-start-line="133" selection-start-column="40" selection-end-line="133" selection-end-column="40" />
+          <folding>
+            <element signature="e#15711#15712#0" expanded="true" />
+            <element signature="e#15747#15748#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/TriangleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="159" column="5" lean-forward="true" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/EmbeddedPictureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="79" column="31" lean-forward="true" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/EmbeddedPicture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/ShapeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/ShapeExceptionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/CircleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="279" column="40" selection-start-line="279" selection-start-column="40" selection-end-line="279" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/CompositeImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#4219#4220#0" expanded="true" />
+            <element signature="e#4252#4253#0" expanded="true" />
+            <element signature="e#4375#4376#0" expanded="true" />
+            <element signature="e#4405#4406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/CompositeImageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/LineTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/flyWeight/ShapeFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="260">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
