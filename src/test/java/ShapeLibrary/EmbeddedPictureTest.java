@@ -7,6 +7,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 
 import static org.junit.Assert.*;
 
@@ -26,6 +27,14 @@ public class EmbeddedPictureTest {
 
     @Test
     public void move() {
+    }
+
+    @Test
+    public void testScale() throws ShapeException {
+        EmbeddedPicture embeddedPicture= new EmbeddedPicture(10,60,5,6,"LandScape.jpg");
+        embeddedPicture.scale(4);
+        assertEquals(20,embeddedPicture.getCentre_Image().getX(),0);
+        assertEquals(24,embeddedPicture.getCentre_Image().getY(),0);
     }
 
     @Test
@@ -56,6 +65,27 @@ public class EmbeddedPictureTest {
     }
 
     @Test
+    public void testSaveOutputStream(){
+        try{
+            EmbeddedPicture myEmbeddedPicture = new EmbeddedPicture(600, 600, 10, 10, "forrest-gump.jpg");
+            myEmbeddedPicture.saveOutputStream("embedded.txt", myEmbeddedPicture);
+            myEmbeddedPicture.saveOutputStream("myEmbedded.txt", myEmbeddedPicture);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testloadInputStream(){
+        try {
+            File file = new File("C:\\Users\\princy\\Desktop\\Cs5700\\HW2_ShapeLibrary\\embedded.txt");
+            Shape.loadInputStream(new FileInputStream(file));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
     public void testRender() {
         try {
             double length = 600;
@@ -75,7 +105,7 @@ public class EmbeddedPictureTest {
             graphics.setColor(Color.RED);
 
             myEmbeddedPicture.render( 0, 0,graphics);
-            assertTrue(ImageIO.write(outputImage, "jpg", new File("LandScape.jpg")));
+            assertTrue(ImageIO.write(outputImage, "png", new File("LandScape.png")));
             assertEquals("LandScape.jpg",myEmbeddedPicture.getPath());
         } catch (Exception e) {
             e.printStackTrace();

@@ -93,6 +93,11 @@ public class Point extends Shape{
         public double computeArea(){
             return 0;
         }
+
+        public void scale(double scaleFactor){
+            x*=scaleFactor;
+            y*=scaleFactor;
+        }
 //        public String toString() {
 //            return "Point,"+(x)+","+(y)+",";
 //        }

@@ -6,6 +6,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 
 import static org.junit.Assert.*;
 
@@ -95,6 +96,16 @@ public class LineTest {
     }
 
     @Test
+    public void testScale() throws ShapeException {
+        Line line=new Line(2,0,3,0);
+        line.scale(2);
+        assertEquals(4,line.getPoint1().getX(),0);
+        assertEquals(0,line.getPoint1().getY(),0);
+        assertEquals(6,line.getPoint2().getX(),0);
+        assertEquals(0,line.getPoint2().getY(),0);
+    }
+
+    @Test
     public void testComputeLength() throws ShapeException {
         Line myLine = new Line(1, 2, 4, 10);
         assertEquals(8.544, myLine.computeLength(), 0.001);
@@ -128,6 +139,27 @@ public class LineTest {
     public void computeArea() throws ShapeException {
         Line myLine= new Line(2,0,5,9);
         assertEquals(0,myLine.computeArea(),0);
+    }
+
+    @Test
+    public void testSaveOutputStream(){
+        try{
+            Line myLine = new Line(10, 10,20,20);
+            myLine.saveOutputStream("line.txt", myLine);
+            myLine.saveOutputStream("myLine.txt", myLine);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testLoadInputStream(){
+        try {
+            File file = new File("C:\\Users\\princy\\Desktop\\Cs5700\\HW2_ShapeLibrary\\line.txt");
+            Shape.loadInputStream(new FileInputStream(file));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 //    @Test

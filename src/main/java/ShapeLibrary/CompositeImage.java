@@ -90,7 +90,7 @@ public class CompositeImage extends Shape{
                     //i=i+3;
                 }
 
-                //System.out.println("size is :" +shapes.size());
+
             }
 
         }catch (Exception e){
@@ -100,10 +100,10 @@ public class CompositeImage extends Shape{
     public void addShape(Shape shape){
         shapes.add(shape);
     }
-//    public void removeShape(Shape shape)
-//    {
-//        shapes.remove(shape);
-//    }
+    public void removeShape(Shape shape)
+    {
+        shapes.remove(shape);
+    }
     public void removeAllShapes()
     {
         shapes.clear();

@@ -98,6 +98,13 @@ public class Rectangle extends Shape{
         point4.move(deltaX,deltaY);
     }
 
+    public void scale(double scaleFactor){
+        point1.scale(scaleFactor);
+        point2.scale(scaleFactor);
+        point3.scale(scaleFactor);
+        point4.scale(scaleFactor);
+    }
+
     /**
      * This function calculates the area of the rectangle
      */

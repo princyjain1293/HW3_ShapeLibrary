@@ -72,13 +72,18 @@ public class Line extends Shape{
          * @return  The length of the line
          */
         public double computeLength() {
-            return Math.sqrt(Math.pow(point2.getX() - point1.getX(), 2) +
+            double length=Math.sqrt(Math.pow(point2.getX() - point1.getX(), 2) +
                     Math.pow(point2.getY() - point1.getY(), 2));
+            return length;
         }
 
-        /**
-         * @return  The slope of the line
-         */
+    public void scale(double scaleFactor) throws ShapeException {
+        Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
+        point1.scale(scaleFactor);
+        point2.scale(scaleFactor);
+    }
+
+
         public double computeSlope() {
             return (point2.getY() - point1.getY())/(point2.getX() - point1.getX());
         }
@@ -86,9 +91,7 @@ public class Line extends Shape{
         public double computeArea(){
             return 0;
         }
-//        public String toString() {
-//            return "Line,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+",";
-//        }
+
         public List<Shape> getShapes() {
             return null;
         }
@@ -96,7 +99,6 @@ public class Line extends Shape{
 
             // Shift the shape by the specified rendering offset
             move(-xOffset, -yOffset);
-
             // Compute the left side of the bounding box
             int x1 = (int) Math.round(point1.getX());
             int x2 = (int) Math.round(point2.getX());
@@ -104,9 +106,6 @@ public class Line extends Shape{
             // Compute the top side of the bounding box
             int y1 = (int) Math.round(point1.getY());
             int y2 = (int) Math.round(point2.getY());
-
-
-
 
             // Draw the circle by drawing an oval in a square bounding box
             graphics.drawLine(x1,y1,x2,y2);

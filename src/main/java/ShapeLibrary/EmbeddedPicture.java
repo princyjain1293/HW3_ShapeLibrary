@@ -20,6 +20,7 @@ public class EmbeddedPicture extends Shape {
     }
 
     public String getPath(){return path;}
+    public Point getCentre_Image(){return centre_Image;}
 
     public double computeArea(){
         return length*breadth;
@@ -27,6 +28,10 @@ public class EmbeddedPicture extends Shape {
 
     public void move(double deltaX, double deltaY) throws ShapeException {
         centre_Image.move(deltaX,deltaY);
+    }
+
+    public void scale(double scaleFactor){
+        centre_Image.scale(scaleFactor);
     }
 
     public List<Shape> getShapes(){

@@ -6,6 +6,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 
 import static org.junit.Assert.*;
 
@@ -281,6 +282,24 @@ public class CircleTest {
             // Write to a file so the results can be compared manually
             assertTrue(ImageIO.write(bImg, "png", new File("circle.png")));
         }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testSaveOutputStream() throws ShapeException {
+        Circle myCircle = new Circle(10,10,5);
+        myCircle.saveOutputStream("circle.txt", myCircle);
+        myCircle.saveOutputStream("myCircle.txt", myCircle);
+    }
+
+    @Test
+    public void testLoadInputStream(){
+        try {
+            File file = new File("C:\\Users\\princy\\Desktop\\Cs5700\\HW2_ShapeLibrary\\circle.txt");
+            Shape shape = Shape.loadInputStream(new FileInputStream(file));
+            System.out.println(shape.computeArea());
+        }catch(Exception e){
             e.printStackTrace();
         }
     }

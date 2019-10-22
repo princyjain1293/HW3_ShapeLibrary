@@ -6,6 +6,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 
 import static org.junit.Assert.*;
 
@@ -184,9 +185,42 @@ public class TriangleTest {
     }
 
     @Test
+    public void testScale() throws ShapeException {
+        Triangle triangle= new Triangle(0,0,0,3,5,0);
+        triangle.scale(2);
+        assertEquals(0,triangle.getPoint1().getX(),0);
+        assertEquals(0,triangle.getPoint1().getY(),0);
+        assertEquals(0,triangle.getPoint2().getX(),0);
+        assertEquals(6,triangle.getPoint2().getY(),0);
+        assertEquals(10,triangle.getPoint3().getX(),0);
+        assertEquals(0,triangle.getPoint3().getY(),0);
+    }
+
+    @Test
     public void testcomputeArea() throws ShapeException {
         Triangle myTriangle = new Triangle(10,6,8);
         assertEquals(24, myTriangle.computeArea(),0);
+    }
+
+    @Test
+    public void testSaveOutputStream(){
+        try{
+            Triangle myTriangle = new Triangle(20,20,20,40,60,40);
+            myTriangle.saveOutputStream("triangle.txt", myTriangle);
+            myTriangle.saveOutputStream("myTriangle.txt", myTriangle);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testLoadInputStream(){
+        try {
+            File file = new File("C:\\Users\\princy\\Desktop\\Cs5700\\HW2_ShapeLibrary\\triangle.txt");
+            Shape.loadInputStream(new FileInputStream(file));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 

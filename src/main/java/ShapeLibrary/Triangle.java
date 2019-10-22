@@ -85,6 +85,12 @@ public class Triangle extends Shape{
         point3.move(deltaX,deltaY);
     }
 
+    public void scale(double scaleFactor){
+        point1.scale(scaleFactor);
+        point2.scale(scaleFactor);
+        point3.scale(scaleFactor);
+    }
+
     //This function computes the perimeter of triangle
     public double getPerimeter(){return side1+side2+side3;}
 

@@ -6,6 +6,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
@@ -66,11 +67,19 @@ public class CompositeImageTest {
 
         compositeShape.addShape(shape11);
 
-        compositeShape.saveShape("compositeShape.txt", compositeShape);
+        compositeShape.saveOutputStream("compositeShape.txt", compositeShape);
+        compositeShape.saveOutputStream("myCompositeShape.txt", compositeShape);
     }
 
     @Test
-    public void removeShape() {
+    public void testRemoveShape() throws ShapeException {
+        Circle shape1 = new Circle(3, 3, 2);
+        Rectangle shape2 = new Rectangle(0, 0, 0, 4, 3, 4, 3, 0);
+        CompositeImage compositeShape = new CompositeImage();
+        compositeShape.addShape(shape1);
+        compositeShape.addShape(shape2);
+        compositeShape.removeShape(shape1);
+        System.out.println(compositeShape.getShapes());
     }
 
     @Test
@@ -108,6 +117,18 @@ public class CompositeImageTest {
     }
 
     @Test
+    public void testLoadInputStream(){
+        try {
+            File file = new File("C:\\Users\\princy\\Desktop\\Cs5700\\HW2_ShapeLibrary\\compositeShape.txt");
+            Shape shape = Shape.loadInputStream(new FileInputStream(file));
+            System.out.println("Size is : " + shape.getShapes().size());
+            System.out.println("Area is : "+shape.computeArea());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
     public void testRender() {
         try {
             //Setup
@@ -116,7 +137,8 @@ public class CompositeImageTest {
             composite.addShape(new Rectangle(20, 20, 20, 40, 60, 40, 60, 20));
 
             composite.addShape(new Triangle(10, 20, 30, 60, 40, 10));
-            composite.addShape(new EmbeddedPicture(18, 16, 10, 10, "LandScape.jpg"));
+            composite.addShape(new EmbeddedPicture(30, 40, 10, 10, "LandScape.jpg"));
+            composite.addShape(new Line(10,20,10,15));
 
             BufferedImage bImg = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
             Graphics2D graphics = bImg.createGraphics();

@@ -1,0 +1,1 @@
+ShapeLibrary.Rectangle@cd51c3

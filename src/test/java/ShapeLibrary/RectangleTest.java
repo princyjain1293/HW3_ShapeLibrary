@@ -6,6 +6,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 
 import static org.junit.Assert.*;
 
@@ -198,9 +199,45 @@ public class RectangleTest {
     }
 
     @Test
+    public void testScale() throws ShapeException {
+        Rectangle rectangle= new Rectangle(0,0,0,4,3,4,3,0);
+        rectangle.scale(2);
+        assertEquals(0,rectangle.getPoint1().getX(),0);
+        assertEquals(0,rectangle.getPoint1().getY(),0);
+        assertEquals(0,rectangle.getPoint2().getX(),0);
+        assertEquals(8,rectangle.getPoint2().getY(),0);
+        assertEquals(6,rectangle.getPoint3().getX(),0);
+        assertEquals(8,rectangle.getPoint3().getY(),0);
+        assertEquals(6,rectangle.getPoint4().getX(),0);
+        assertEquals(0,rectangle.getPoint4().getY(),0);
+
+    }
+
+    @Test
     public void testGetBreadth() throws ShapeException {
         Rectangle myRectangle = new Rectangle(10, 20);
         assertEquals(20, myRectangle.getBreadth(), 0);
+    }
+
+    @Test
+    public void testSaveOutputStream(){
+        try{
+            Rectangle myRectangle = new Rectangle(20,20,20,40,60,40,60,20);
+            myRectangle.saveOutputStream("rectangle.txt", myRectangle);
+            myRectangle.saveOutputStream("myRectangle.txt", myRectangle);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testLoadInputStream(){
+        try {
+            File file = new File("C:\\Users\\princy\\Desktop\\Cs5700\\HW2_ShapeLibrary\\rectangle.txt");
+            Shape.loadInputStream(new FileInputStream(file));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test

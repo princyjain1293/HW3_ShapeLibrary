@@ -6,6 +6,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 
 import static org.junit.Assert.*;
 
@@ -72,6 +73,34 @@ public class PointTest {
 
     @Test
     public void getY() {
+    }
+    @Test
+    public void testsaveOutputStream(){
+        try{
+            Point myPoint = new Point(10, 10);
+            myPoint.saveOutputStream("point.txt", myPoint);
+            myPoint.saveOutputStream("myPoint.txt",myPoint);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testLoadInputStream(){
+        try {
+            File file = new File("C:\\Users\\princy\\Desktop\\Cs5700\\HW2_ShapeLibrary\\point.txt");
+            Shape.loadInputStream(new FileInputStream(file));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testScale() throws ShapeException {
+        Point point=new Point(2,4);
+        point.scale(5);
+        assertEquals(10,point.getX(),0);
+        assertEquals(20,point.getY(),0);
     }
 
     @Test

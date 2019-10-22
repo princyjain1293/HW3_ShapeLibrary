@@ -1,0 +1,10 @@
+
+ShapeLibrary.Circle@19866c
+ShapeLibrary.Triangle@3e31ee
+ShapeLibrary.Rectangle@fb2c38
+Compositeshape,
+Compositeshape,
+ShapeLibrary.Line@7d299b
+Compositeshape,
+ShapeLibrary.EmbeddedPicture@afffde
+ShapeLibrary.Point@1690aa4
