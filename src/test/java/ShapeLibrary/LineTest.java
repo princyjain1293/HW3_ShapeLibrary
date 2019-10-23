@@ -162,9 +162,13 @@ public class LineTest {
         }
     }
 
-//    @Test
-//    public void toString() {
-//    }
+    @Test
+    public void testToText() throws ShapeException {
+        Line myLine= new Line(10, 10,20,20);
+        String actual=myLine.toText();
+        String expected="Line,10.0,10.0,20.0,20.0,";
+        assertEquals(expected,actual);
+    }
 
     @Test
     public void testGetShapes() {

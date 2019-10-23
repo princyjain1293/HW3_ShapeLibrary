@@ -1,1 +1,1 @@
-ShapeLibrary.Triangle@fa23c1
+Triangle,0.0,0.0,0.0,4.0,6.0,0.0,

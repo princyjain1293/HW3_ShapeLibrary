@@ -130,6 +130,10 @@ public class Point extends Shape{
         move(xOffset, yOffset);
     }
 
+    public String toText() {
+        return "Point,"+String.valueOf(x)+","+String.valueOf(y)+",";
+    }
+
 
     }
 

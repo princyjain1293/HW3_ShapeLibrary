@@ -112,5 +112,13 @@ public class EmbeddedPictureTest {
         }
     }
 
+    @Test
+    public void testToText() throws ShapeException {
+        EmbeddedPicture myEmbeddedPicture = new EmbeddedPicture(10, 10, 600, 600, "LandScape.jpg");
+        String actual= myEmbeddedPicture.toText();
+        String expected= "EmbeddedPicture,10.0,10.0,600.0,600.0,LandScape.jpg,";
+
+    }
+
 
 }

@@ -300,4 +300,11 @@ public class PointTest {
             e.printStackTrace();
         }
     }
+    @Test
+    public void testToText() throws ShapeException {
+        Point myPoint = new Point(1,2);
+        String actual=myPoint.toText();
+        String expected="Point,1.0,2.0,";
+        assertEquals(expected,actual);
+    }
 }

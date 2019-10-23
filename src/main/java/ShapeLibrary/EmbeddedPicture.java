@@ -58,4 +58,8 @@ public class EmbeddedPicture extends Shape {
         move(xOffset, yOffset);
     }
 
+    public String toText() {
+        return "EmbeddedPicture,"+centre_Image.getX()+","+centre_Image.getY()+","+String.valueOf(length)+","+String.valueOf(breadth)+","+path+",";
+    }
+
 }

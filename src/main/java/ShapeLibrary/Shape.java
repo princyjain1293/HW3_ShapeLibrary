@@ -9,6 +9,7 @@ public abstract class Shape {
     public abstract double computeArea() throws ShapeException;
     public abstract List<Shape> getShapes();
     public abstract void render(int xOffset, int yOffset, Graphics graphics) throws ShapeException;
+    public abstract String toText();
 
     public void saveOutputStream(String fileName, Shape shape)
     {
@@ -19,7 +20,7 @@ public abstract class Shape {
                 file.createNewFile();
                 BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
                 System.out.println("Saving Shape in progress");
-                bufferedWriter.write(shape.toString());
+                bufferedWriter.write(shape.toText());
                 bufferedWriter.close();
             }
 

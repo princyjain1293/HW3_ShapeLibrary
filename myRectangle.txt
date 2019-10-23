@@ -1,1 +1,1 @@
-ShapeLibrary.Rectangle@cd51c3
+Rectangle,20.0,20.0,20.0,40.0,60.0,40.0,60.0,20.0,

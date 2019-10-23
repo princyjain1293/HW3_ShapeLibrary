@@ -317,4 +317,13 @@ public class RectangleTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void testToText() throws ShapeException {
+        Rectangle myRectangle= new Rectangle(20,20,20,40,60,40,60,20);
+        String actual=myRectangle.toText();
+        String expected="Rectangle,20.0,20.0,20.0,40.0,60.0,40.0,60.0,20.0,";
+        assertEquals(expected,actual);
+    }
+
 }

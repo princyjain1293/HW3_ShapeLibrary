@@ -294,6 +294,14 @@ public class CircleTest {
     }
 
     @Test
+    public void testToText() throws ShapeException {
+        Circle myCircle= new Circle(10,10,5);
+        String expected="Circle,10.0,10.0,5.0,";
+        String actual=myCircle.toText();
+        assertEquals(expected,actual);
+    }
+
+    @Test
     public void testLoadInputStream(){
         try {
             File file = new File("C:\\Users\\princy\\Desktop\\Cs5700\\HW2_ShapeLibrary\\circle.txt");

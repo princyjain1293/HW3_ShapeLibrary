@@ -253,4 +253,12 @@ public class TriangleTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void testToText() throws ShapeException {
+        Triangle myTriangle = new Triangle(20,20,20,40,60,40);
+        String actual=myTriangle.toText();
+        String expected= "Triangle,20.0,20.0,20.0,40.0,60.0,40.0,";
+        assertEquals(expected,actual);
+    }
 }

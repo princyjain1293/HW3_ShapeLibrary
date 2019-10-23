@@ -114,9 +114,7 @@ public class Rectangle extends Shape{
         double area= length*breadth;
         return area;
     }
-//    public String toString() {
-//        return "Rectangle,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+","+String.valueOf(point3.getX())+","+String.valueOf(point3.getY())+","+String.valueOf(point4.getX())+","+String.valueOf(point4.getY())+",";
-//    }
+
 
 
     public List<Shape> getShapes() {
@@ -144,6 +142,10 @@ public class Rectangle extends Shape{
 
         // Shift the shape back to its original location
         move(xOffset, yOffset);
+    }
+
+    public String toText() {
+        return "Rectangle,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+","+String.valueOf(point3.getX())+","+String.valueOf(point3.getY())+","+String.valueOf(point4.getX())+","+String.valueOf(point4.getY())+",";
     }
 
 }

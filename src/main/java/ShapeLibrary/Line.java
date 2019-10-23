@@ -113,6 +113,9 @@ public class Line extends Shape{
             // Shift the shape back to its original location
             move(xOffset, yOffset);
         }
+    public String toText() {
+        return "Line,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+",";
+    }
     }
 
 

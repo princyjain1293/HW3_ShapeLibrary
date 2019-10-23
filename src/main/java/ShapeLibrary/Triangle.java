@@ -127,4 +127,7 @@ public class Triangle extends Shape{
         // Shift the shape back to its original location
         move(xOffset, yOffset);
     }
+    public String toText() {
+        return "Triangle,"+String.valueOf(point1.getX())+","+String.valueOf(point1.getY())+","+String.valueOf(point2.getX())+","+String.valueOf(point2.getY())+","+String.valueOf(point3.getX())+","+String.valueOf(point3.getY())+",";
+    }
 }

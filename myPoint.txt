@@ -1,1 +1,1 @@
-ShapeLibrary.Point@a8ceb6
+Point,10.0,10.0,

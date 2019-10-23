@@ -115,6 +115,10 @@ public class Circle extends Shape{
             // Shift the shape back to its original location
             move(xOffset, yOffset);
         }
+    public String toText() {
+        System.out.println("toString method");
+        return "Circle,"+String.valueOf(center.getX())+","+String.valueOf(center.getY())+","+String.valueOf(radius)+",";
+    }
 
     }
 
