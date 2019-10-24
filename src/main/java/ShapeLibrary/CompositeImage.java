@@ -161,13 +161,18 @@ public class CompositeImage extends Shape{
     }
 
     public String toText() {
-        try {
-            //File newFile = makeFile("sample.txt");
-            String text = new String(Files.readAllBytes(Paths.get("sample.txt")), StandardCharsets.UTF_8);
-            return "Compositeshape,"+text;
-        }catch(Exception e){
-
+        String sample= "CompositeImage,";
+        for(Shape s:shapes){
+            sample=sample+s.toText()+"\n";
         }
-        return null;
+        return sample;
+//        try {
+//            //File newFile = makeFile("sample.txt");
+//            String text = new String(Files.readAllBytes(Paths.get("sample.txt")), StandardCharsets.UTF_8);
+//            return "Compositeshape,"+text;
+//        }catch(Exception e){
+//
+//        }
+//        return null;
     }
 }

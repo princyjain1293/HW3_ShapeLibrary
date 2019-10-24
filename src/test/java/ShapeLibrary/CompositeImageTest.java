@@ -20,6 +20,8 @@ public class CompositeImageTest {
 //        for(int i=0;i<broke.length;)
 //    }
 
+
+
     @Test
     public void testGetShapes() throws ShapeException {
         Circle shape1 = new Circle(3, 3, 7);
@@ -165,7 +167,7 @@ public class CompositeImageTest {
 
     @Test
     public void testToText(){
-        String[] broke= new String[]{"Circle","0","0","7","Line","0","0","0","4","Rectangle","0","0","0","4","3","4","3","0","Triangle","0","0","0","4","3","0"};
+        String[] broke= new String[]{"Circle", "0", "0", "7", "Line", "0", "0", "0", "4", "Rectangle", "0", "0", "0", "4", "3", "4", "3", "0", "Triangle", "0", "0", "0", "4", "3", "0"};
         CompositeImage compositeImage= new CompositeImage(broke);
         compositeImage.toText();
     }

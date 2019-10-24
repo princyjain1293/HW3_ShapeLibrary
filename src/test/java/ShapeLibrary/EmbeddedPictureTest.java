@@ -1,6 +1,6 @@
 package ShapeLibrary;
 
-import flyWeight.ShapeFactory;
+import flyWeight.FlyweightFactory;
 import org.junit.Test;
 
 import javax.imageio.ImageIO;
@@ -51,13 +51,13 @@ public class EmbeddedPictureTest {
     public void testObjectHandler(){
         try
         {
-            ShapeFactory shapeFactory= new ShapeFactory();
-            shapeFactory.objectHandler("tomHanks.jpg");
-            ShapeFactory.objectHandler("forrest-gump.jpg");
-            shapeFactory.objectHandler("tomHanks.jpg");
-            ShapeFactory.objectHandler("forrest-gump.jpg");
-            shapeFactory.objectHandler("tomHanks.jpg");
-            ShapeFactory.objectHandler("forrest-gump.jpg");
+            FlyweightFactory flyweightFactory = new FlyweightFactory();
+            flyweightFactory.objectHandler("tomHanks.jpg");
+            FlyweightFactory.objectHandler("forrest-gump.jpg");
+            flyweightFactory.objectHandler("tomHanks.jpg");
+            FlyweightFactory.objectHandler("forrest-gump.jpg");
+            flyweightFactory.objectHandler("tomHanks.jpg");
+            FlyweightFactory.objectHandler("forrest-gump.jpg");
         }catch (Exception e)
         {
             e.printStackTrace();
@@ -92,7 +92,7 @@ public class EmbeddedPictureTest {
             double width = 480;
             String source = "LandScape.jpg";
             EmbeddedPicture myEmbeddedPicture = new EmbeddedPicture(length, width, 10, 10, source);
-            File inputFile = ShapeFactory.objectHandler(source);
+            File inputFile = FlyweightFactory.objectHandler(source);
             BufferedImage inputImage = null;
             inputImage = ImageIO.read(inputFile);
             // creates output image
