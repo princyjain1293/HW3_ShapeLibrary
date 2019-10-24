@@ -84,7 +84,7 @@
     <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$CompositeImageTest.ic" NAME="CompositeImageTest Coverage Results" MODIFIED="1571793173619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$All_in_HW2_ShapeLibrary_test.ic" NAME="All in HW2_ShapeLibrary.test Coverage Results" MODIFIED="1571958144942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$All_in_HW2_ShapeLibrary_test.ic" NAME="All in HW2_ShapeLibrary.test Coverage Results" MODIFIED="1571958534881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$TriangleTest_testInvalidConstructor.ic" NAME="TriangleTest.testInvalidConstructor Coverage Results" MODIFIED="1571633442160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
@@ -339,7 +339,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571958231205" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571958531460" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
   </component>
