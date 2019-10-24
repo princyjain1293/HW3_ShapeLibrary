@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="496f6578-1716-496f-85bf-d8bb21c0c0bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCompositeShape.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myCompositeShape.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/CompositeImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ShapeLibrary/CompositeImage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/flyWeight/ShapeFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/ShapeLibrary/EmbeddedPictureTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ShapeLibrary/EmbeddedPictureTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/flyWeight/ShapeFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ShapeLibrary/CompositeImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShapeLibrary/CompositeImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flyWeight/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flyWeight/FlyweightFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ShapeLibrary/CompositeImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/CompositeImageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ShapeLibrary/EmbeddedPictureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/EmbeddedPictureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/flyWeight/ShapeFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/flyWeight/FlyweightFactoryTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="496f6578-1716-496f-85bf-d8bb21c0c0bf" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -162,10 +150,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/flyWeight/FlyweightFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="459">
               <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -174,11 +162,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/flyWeight/FlyweightFactoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+            <state relative-caret-position="221">
+              <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -351,7 +339,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571958140610" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571958231205" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
   </component>
@@ -471,12 +459,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CompositeImageTest - 2019.10.22 at 19h 13m 55s.xml">
-      <configuration name="CompositeImageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShapeLibrary_in_HW2_ShapeLibrary_test - 2019.10.22 at 23h 46m 18s.xml">
-      <configuration name="ShapeLibrary in HW2_ShapeLibrary.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_HW2_ShapeLibrary_test - 2019.10.22 at 23h 55m 51s.xml">
       <configuration name="All in HW2_ShapeLibrary.test" configurationId="JUnit" />
     </history-entry>
@@ -501,6 +483,12 @@
     <history-entry file="CompositeImageTest_testAddShape - 2019.10.23 at 17h 46m 28s.xml">
       <configuration name="CompositeImageTest.testAddShape" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FlyweightFactoryTest_testGetShapes - 2019.10.24 at 17h 01m 52s.xml">
+      <configuration name="FlyweightFactoryTest.testGetShapes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_HW2_ShapeLibrary_test - 2019.10.24 at 17h 03m 05s.xml">
+      <configuration name="All in HW2_ShapeLibrary.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -513,9 +501,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.21255673" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.21255673" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.12556732" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -525,7 +512,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -534,7 +521,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Build" order="11" visible="true" weight="0.3289689" />
-      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.502439" side_tool="true" visible="true" weight="0.24962178" />
+      <window_info active="true" anchor="right" id="Coverage" order="0" sideWeight="0.502439" side_tool="true" visible="true" weight="0.24962178" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" sideWeight="0.49756098" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -778,20 +765,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/flyWeight/FlyweightFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/flyWeight/FlyweightFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="459">
           <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/flyWeight/FlyweightFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
         </state>
       </provider>
     </entry>
