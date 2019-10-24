@@ -40,30 +40,30 @@ public class CompositeImageTest {
     public void testAddShape() throws ShapeException {
         Circle shape1 = new Circle(3, 3, 2);
 
-        Triangle shape3 = new Triangle(1, 2, 3, 6, 4, 1);
-        Rectangle shape4 = new Rectangle(0, 0, 0, 3, 4, 3, 4, 0);
-        Line shape7 = new Line(2, 2, 4, 4);
+        Triangle shape2 = new Triangle(1, 2, 3, 6, 4, 1);
+        Rectangle shape3 = new Rectangle(0, 0, 0, 3, 4, 3, 4, 0);
+        Line shape4 = new Line(2, 2, 4, 4);
 
         Point shape11 = new Point(1,2);
         EmbeddedPicture shape9 = new EmbeddedPicture(600, 600, 10, 10, "forrest-gump.jpg");
         CompositeImage shape5 = new CompositeImage();
 
-        shape5.addShape(shape4);
+        shape5.addShape(shape3);
         CompositeImage shape6 = new CompositeImage();
         shape6.addShape(shape1);
-        shape6.addShape(shape3);
+        shape6.addShape(shape2);
         CompositeImage shape8 = new CompositeImage();
-        shape8.addShape(shape7);
+        shape8.addShape(shape4);
         shape8.addShape(shape1);
 
         CompositeImage compositeShape = new CompositeImage();
         compositeShape.addShape(shape1);
 
+        compositeShape.addShape(shape2);
         compositeShape.addShape(shape3);
         compositeShape.addShape(shape4);
         compositeShape.addShape(shape5);
         compositeShape.addShape(shape6);
-        compositeShape.addShape(shape7);
         compositeShape.addShape(shape8);
         compositeShape.addShape(shape9);
 
