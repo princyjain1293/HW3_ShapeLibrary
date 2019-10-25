@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="496f6578-1716-496f-85bf-d8bb21c0c0bf" name="Default Changelist" comment="" />
+    <list default="true" id="496f6578-1716-496f-85bf-d8bb21c0c0bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -27,13 +29,13 @@
     <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$TriangleTest_testLoadInputStream.ic" NAME="TriangleTest.testLoadInputStream Coverage Results" MODIFIED="1571786466173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$RectangleTest_testValidConstructor.ic" NAME="RectangleTest.testValidConstructor Coverage Results" MODIFIED="1571617150386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ShapeLibrary.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$ShapeExceptionTest.ic" NAME="ShapeExceptionTest Coverage Results" MODIFIED="1571628788911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$CompositeImageTest_testComputeArea.ic" NAME="CompositeImageTest.testComputeArea Coverage Results" MODIFIED="1571684842506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$RectangleTest_testValidConstructor.ic" NAME="RectangleTest.testValidConstructor Coverage Results" MODIFIED="1571965223984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$ValidatorTest.ic" NAME="ValidatorTest Coverage Results" MODIFIED="1571631594994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -94,6 +96,9 @@
     <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$CompositeImageTest_testRender.ic" NAME="CompositeImageTest.testRender Coverage Results" MODIFIED="1571788650626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$RectangleTest_testInvalidConstructor.ic" NAME="RectangleTest.testInvalidConstructor Coverage Results" MODIFIED="1571964777199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ShapeLibrary.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/HW2_ShapeLibrary$EmbeddedPictureTest_testScale.ic" NAME="EmbeddedPictureTest.testScale Coverage Results" MODIFIED="1571722656585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ShapeLibrary.*</FILTER>
     </SUITE>
@@ -126,11 +131,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/EmbeddedPictureTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" column="62" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="62" />
+            <state relative-caret-position="42">
+              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -221,6 +235,8 @@
       <find>set</find>
       <find>move</find>
       <find>save</find>
+      <find>add</find>
+      <find>object</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\princy\Desktop\Cs5700\HW2_ShapeLibrary\src\test\java</dir>
@@ -246,7 +262,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ShapeLibrary/Triangle.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/LineTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/PointTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/TriangleTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/EmbeddedPictureTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/flyWeight/ShapeFactoryTest.java" />
@@ -255,6 +270,7 @@
         <option value="$PROJECT_DIR$/src/main/java/flyWeight/FlyweightFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/flyWeight/FlyweightFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/CompositeImageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java" />
       </list>
     </option>
   </component>
@@ -348,7 +364,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571963332200" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571965277664" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
   </component>
@@ -373,7 +389,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in HW2_ShapeLibrary.test">
+  <component name="RunManager" selected="JUnit.RectangleTest.testValidConstructor">
     <configuration name="All in HW2_ShapeLibrary.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW2_ShapeLibrary.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -398,22 +414,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompositeImageTest.testToText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HW2_ShapeLibrary.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ShapeLibrary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ShapeLibrary" />
-      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.CompositeImageTest" />
-      <option name="METHOD_NAME" value="testToText" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FlyweightFactoryTest.testGetShapes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW2_ShapeLibrary.test" />
       <extension name="coverage">
@@ -430,7 +430,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShapeLibrary in HW2_ShapeLibrary.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RectangleTest.testInvalidConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW2_ShapeLibrary.test" />
       <extension name="coverage">
         <pattern>
@@ -439,18 +439,36 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ShapeLibrary" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.RectangleTest" />
+      <option name="METHOD_NAME" value="testInvalidConstructor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RectangleTest.testValidConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW2_ShapeLibrary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ShapeLibrary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ShapeLibrary" />
+      <option name="MAIN_CLASS_NAME" value="ShapeLibrary.RectangleTest" />
+      <option name="METHOD_NAME" value="testValidConstructor" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RectangleTest.testValidConstructor" />
+        <item itemvalue="JUnit.RectangleTest.testInvalidConstructor" />
         <item itemvalue="JUnit.All in HW2_ShapeLibrary.test" />
         <item itemvalue="JUnit.FlyweightFactoryTest.testGetShapes" />
         <item itemvalue="JUnit.CompositeImageTest.testAddShape" />
-        <item itemvalue="JUnit.CompositeImageTest.testToText" />
-        <item itemvalue="JUnit.ShapeLibrary in HW2_ShapeLibrary.test" />
       </list>
     </recent_temporary>
   </component>
@@ -468,18 +486,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_HW2_ShapeLibrary_test - 2019.10.23 at 12h 35m 23s.xml">
-      <configuration name="All in HW2_ShapeLibrary.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HW2_ShapeLibrary_test - 2019.10.23 at 12h 45m 17s.xml">
-      <configuration name="All in HW2_ShapeLibrary.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompositeImageTest_testToText - 2019.10.23 at 17h 34m 35s.xml">
-      <configuration name="CompositeImageTest.testToText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompositeImageTest_testAddShape - 2019.10.23 at 17h 43m 35s.xml">
-      <configuration name="CompositeImageTest.testAddShape" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CompositeImageTest_testAddShape - 2019.10.23 at 17h 45m 12s.xml">
       <configuration name="CompositeImageTest.testAddShape" configurationId="JUnit" />
     </history-entry>
@@ -498,6 +504,18 @@
     <history-entry file="All_in_HW2_ShapeLibrary_test - 2019.10.24 at 17h 43m 59s.xml">
       <configuration name="All in HW2_ShapeLibrary.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RectangleTest_testInvalidConstructor - 2019.10.24 at 18h 54m 39s.xml">
+      <configuration name="RectangleTest.testInvalidConstructor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RectangleTest_testValidConstructor - 2019.10.24 at 18h 56m 29s.xml">
+      <configuration name="RectangleTest.testValidConstructor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RectangleTest_testValidConstructor - 2019.10.24 at 18h 58m 00s.xml">
+      <configuration name="RectangleTest.testValidConstructor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RectangleTest_testValidConstructor - 2019.10.24 at 19h 01m 03s.xml">
+      <configuration name="RectangleTest.testValidConstructor" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -510,8 +528,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.21255673" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.21255673" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.12556732" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -530,7 +549,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Build" order="11" visible="true" weight="0.3289689" />
-      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.502439" side_tool="true" visible="true" weight="0.24962178" />
+      <window_info active="true" anchor="right" id="Coverage" order="0" sideWeight="0.502439" side_tool="true" visible="true" weight="0.24962178" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" sideWeight="0.49756098" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -695,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2465">
-          <caret line="153" column="57" selection-start-line="153" selection-start-column="57" selection-end-line="153" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ShapeLibrary/Circle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -786,8 +798,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/EmbeddedPictureTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="62" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="62" />
+        <state relative-caret-position="42">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ShapeLibrary/RectangleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
         </state>
       </provider>
     </entry>

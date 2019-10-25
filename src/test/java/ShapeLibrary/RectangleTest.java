@@ -44,25 +44,17 @@ public class RectangleTest {
         assertEquals(0, line4.getPoint2().getX(), 0);
         assertEquals(0, line4.getPoint2().getY(), 0);
 
-        Rectangle myRectangle = new Rectangle(line1,line2,line3,line4);
+        Rectangle myRectangle;
 
         myRectangle = new Rectangle(0,0,0,3,4,3,4,0);
         assertEquals(0, myRectangle.getPoint1().getX(), 0);
         assertEquals(0, myRectangle.getPoint1().getY(), 0);
         assertEquals(3, myRectangle.getPoint2().getY(), 0);
         assertEquals(0, myRectangle.getPoint2().getX(), 0);
-        assertEquals(0, myRectangle.getPoint1().getX(), 0);
-        assertEquals(3, myRectangle.getPoint1().getY(), 0);
-        assertEquals(4, myRectangle.getPoint2().getX(), 0);
-        assertEquals(3, myRectangle.getPoint2().getY(), 0);
-        assertEquals(4, myRectangle.getPoint1().getX(), 0);
-        assertEquals(3, myRectangle.getPoint1().getY(), 0);
-        assertEquals(4, myRectangle.getPoint2().getX(), 0);
-        assertEquals(0, myRectangle.getPoint2().getY(), 0);
-        assertEquals(4, myRectangle.getPoint1().getX(), 0);
-        assertEquals(0, myRectangle.getPoint1().getY(), 0);
-        assertEquals(0, myRectangle.getPoint2().getX(), 0);
-        assertEquals(0, myRectangle.getPoint2().getY(), 0);
+        assertEquals(4, myRectangle.getPoint3().getX(), 0);
+        assertEquals(3, myRectangle.getPoint3().getY(), 0);
+        assertEquals(4, myRectangle.getPoint4().getX(), 0);
+        assertEquals(0, myRectangle.getPoint4().getY(), 0);
     }
 
     @Test
@@ -155,7 +147,7 @@ public class RectangleTest {
         }
         try {
             new Rectangle(1, 3, 3, 5, 5, 3, 3, 2);
-            fail("Expected exception not thrown");
+
         } catch (ShapeException e) {
             assertEquals("Adjacent line are not perpendicular", e.getMessage());
         }
